@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Admin/asset/css/style.css">
+    <title>Chi tiết</title>
+</head>
+<body>
+    <section class="admin">
+        <div class="row-grid">
+            <div class="admin-sidebar">
+                <div class="admin-sidebar-top">
+                    <img src="/Admin/asset/images/coolmate.png" alt="">
+                </div>
+                <div class="admin-sidebar-content">
+                    <ul>
+                        <li><a href=""><i class="ri-dashboard-line"></i>Dashboard<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href="/Admin/index.html"><i class="ri-arrow-right-s-fill"></i>Tổng quan</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="ri-file-list-line"></i>Đơn Hàng<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href="/Admin/order_list.html"><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                </div>  
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="ri-file-list-line"></i>Sản Phẩm<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                    <li><a href="/Admin/product_list.html"><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                    <li><a href="/Admin/product_add.html"><i class="ri-arrow-right-s-fill"></i>Thêm</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- admin content -->
+            <div class="admin-content">
+                <div class="admin-content-top">
+                    <div class="admin-content-top-left">
+                        <ul class="flex-box">
+                            <li><i class="ri-search-2-line"></i></li>
+                            <li><i class="ri-drag-move-line"></i></li>
+                        </ul> 
+                    </div>
+                    <div class="admin-content-top-right">
+                        <ul class="flex-box">
+                            <li><i class="ri-notification-line" number="3"></i></li>
+                            <li><i class="ri-chat-3-line" number="5"></i></li>
+                            <li class="flex-box">
+                                <img style="width: 50px;" src="/Admin/asset/images/coolmate.png" alt="">
+                                <p>Admin<i class="ri-arrow-down-s-fill"></i></p>  
+                            </li>
+                        </ul>     
+                    </div>
+                </div>
+
+                <div class="admin-content-main">
+                    <div class="admin-content-main-title">
+                        <h1>Chi tiết đơn hàng</h1>
+                    </div>
+                    <div class="admin-content-main-content">
+                        <!-- Nội dung nằm ở đây -->
+                        <div class="admin-content-main-content-order-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Ảnh</th>
+                                        <th>Tên</th>
+                                        <th>Giá</th>
+                                        <th>Số lượng</th>
+                                        <th>Thành tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><img style="width: 70px;" src="/Admin/asset/images/ao_do.webp" alt=""></td>
+                                        <td>Áo Thun Nam Chạy Bộ Graphic Dot</td>
+                                        <td>159,000</td>
+                                        <td>03</td>
+                                        <td>477,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><img style="width: 70px;" src="/Admin/asset/images/24CMCW.SM008_-_Xanh_Blue_Night_8.webp" alt=""></td>
+                                        <td>Áo sơ mi dài tay cổ tàu Premium Poplin</td>
+                                        <td>404,000</td>
+                                        <td>02</td>
+                                        <td>808,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5"><strong>Tổng tiền</strong></td>
+                                        <td><strong>1,285,000</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/Admin/asset/js/script.js"></script>
+</body>
+</html>
