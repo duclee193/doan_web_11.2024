@@ -49,3 +49,32 @@ const headerNav = document.querySelector(".header-nav");
 Menubar.addEventListener("click", () => {
     headerNav.classList.toggle("active");
 });
+
+// sticky header
+
+window.addEventListener("scroll", () => {
+    if (scrollY > 50) {
+      document.querySelector("#header").classList.add("active");
+    }
+      else {
+        document.querySelector("#header").classList.remove("active");
+      }
+  });
+
+//  điều hướng theo chuột
+let lastScrollTop = 0;
+const header = document.querySelector("#header");
+
+window.addEventListener("scroll", () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Người dùng lướt xuống
+    header.style.top = "-100px"; // Ẩn thanh điều hướng (điều chỉnh giá trị -100px theo chiều cao của thanh điều hướng)
+  } else {
+    // Người dùng lăn chuột lên
+    header.style.top = "0";
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Đảm bảo rằng giá trị không âm
+});
